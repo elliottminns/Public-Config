@@ -1,0 +1,42 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="bullet-train"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# source $HOME/.profile
+# source $HOME/.config/tmuxinator/tmuxinator.zsh
+
+BULLETTRAIN_DIR_BG=red
+BULLETTRAIN_DIR_FG=16
+BULLETTRAIN_GIT_BG=blue
+BULLETTRAIN_GIT_FG=16
+BULLETTRAIN_TIME_BG=cyan
+BULLETTRAIN_TIME_FG=16
+BULLETTRAIN_PROMPT_CHAR=("%{$FG[121]%}λ ")
+BULLETTRAIN_NVM_FG=16
+BULLETTRAIN_RUBY_FG=16
+BULLETTRAIN_CONTEXT_BG=blue
+BULLETTRAIN_CONTEXT_FG=16
+
+setopt auto_cd
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
